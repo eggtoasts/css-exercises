@@ -25,7 +25,7 @@ html {
 }
 
 .sidebar {
-  background-color: #005B94;
+  background-color: #005b94;
 }
 
 .nav {
@@ -33,7 +33,7 @@ html {
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
@@ -45,4 +45,21 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+
+.container {
+  display: grid;
+  /* grid-template: repeat(4, 1fr) / repeat(2, 1fr); */
+  grid-template: 1fr 1fr 1fr 1fr / 0.5fr 2fr;
+  /* grid-template: 200px 200px 500px 200px/ 300px 1100px; */
+  gap: 15px;
+}
+.footer {
+  grid-column: 1 / -1;
+}
+.header {
+  grid-column: 1 / -1;
+}
+.sidebar {
+  grid-row: 2 / -2;
 }
